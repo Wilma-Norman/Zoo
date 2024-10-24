@@ -1,0 +1,42 @@
+.wraper {    
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.animal {
+  margin: 5px 14px 5px 14px;
+  color: black;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 300;
+}
+
+.animal:hover {
+  border-bottom: 1px solid #215732;
+  color: #215732;
+}
+
+.animal a:active {
+  border-bottom: 1px solid #215732;
+  color: #215732;
+}
+
+.animal-active {
+  border-bottom: 1px solid #215732;
+  color: #215732;
+}
+
+@media screen and (max-width: 600px) {
+  .wraper {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin: 10px 10px 100px 10px;
+    }
+}
+    
+  
+
