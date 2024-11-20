@@ -1,15 +1,14 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'
-import './AppComponents.module.css'
 import Header from './Components/Header'
 import Home from './Components/Home'
 import Navigation from './Components/Navigation'
-import Birds from './Components/Structure_Categorys/Birds/index'
-import Reptiles from './Components/Structure_Categorys/Reptiles/index'
-import Mammals from './Components/Structure_Categorys/Mammals/index'
+import Birds from './Components/pages/Birds/index'
+import Reptiles from './Components/pages/Reptiles/index'
+import Mammals from './Components/pages/Mammals/index'
 import Footer from './Components/Footer'
-import Sidebar from './Components/SideBar';
+
 
 
 const App = () => {
@@ -26,7 +25,6 @@ const App = () => {
   return (
     <>
     <Header />
-    <Router>
       <div>
         <Navigation activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
         <div style={section}>
@@ -38,7 +36,6 @@ const App = () => {
           </Routes>          
         </div>
       </div>
-    </Router>
     <Footer />
     </>
   );

@@ -1,11 +1,11 @@
+import styles from '../../pages-style/category.module.css'
 import React from 'react';
-import { reptileData } from '../../../DataCategoy/Reptiles/index'
-import styles from '../global_categorys/category.module.css'
+import { birdData } from '../../../DataCategoy/Birds/index'
 import { useState } from 'react'
 import Popup from '../../Popup/index.jsx'
 import Sidebar from '../../SideBar/index.jsx';
 
-const Reptiles = () => {
+const Birds = () => {
   const [popupOpen, setPopupOpen] = useState(false)
   const [selectedContent, setSelectedContent] = useState(null)
 
@@ -22,12 +22,12 @@ const Reptiles = () => {
 return (
   <section className={styles.wraper}>
     <div className={styles.sidebarContainer}>
-          <Sidebar category="Reptiles" />
+          <Sidebar category="Birds" />
         
   <div className={styles.container}>
-    <h2 className={styles.group}>{reptileData.title}</h2>
+    <h2 className={styles.group}>{birdData.title}</h2>
     <div>
-      {reptileData.content.map((item, index) => (
+      {birdData.content.map((item, index) => (
         <div className={styles.content} key={index} id={item.header.toLowerCase()}>
           <h3 className={styles.title}>{item.header}</h3>
           <div className={styles.wraperImage}>
@@ -54,4 +54,5 @@ return (
   </section>
 );
 };
-export default Reptiles;
+
+export default Birds;

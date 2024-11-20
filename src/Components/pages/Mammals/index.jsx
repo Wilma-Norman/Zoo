@@ -1,4 +1,4 @@
-import styles from '../global_categorys/category.module.css';
+import styles from '../../pages-style/category.module.css'
 import React from 'react';
 import { mammalsData } from '../../../DataCategoy/Mammals/index.jsx';
 import { useState } from 'react';
