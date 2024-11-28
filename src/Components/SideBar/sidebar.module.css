@@ -1,34 +1,23 @@
 .sidebar {
-    margin: 30px;
-    top: 20px;
-    padding: 20px;
-    width: 200px;
-    background-color: #1A5259;
-    color: #fff;
-    height: 30vh;
-    overflow: auto;
-    border-radius: 10px;
-  }
-
-  .sidebar a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  .sidebar a:hover:not(.active) {
-    color: #555;
-  }
+  margin: 30px;
+  padding: 20px;
+  width: 200px;
+   background-color: #1A5259;
+   color: #fff;
+   height: 30vh;
+   border-radius: 10px;
+  }  
 
 .sidenames {
-    list-style-type: none; 
-    padding: 0;
-    font-size: larger;
+  list-style-type: none; 
+  padding: 0;
+  font-size: larger;
 }
 
 .linkname {
-    margin: 10px;
-    border-bottom: 1px solid white;
-    width: fit-content;
+  margin: 10px;
+  border-bottom: 1px solid white;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {

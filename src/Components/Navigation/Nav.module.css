@@ -1,6 +1,5 @@
 .wraper {    
-  display: flex;
-  flex-direction: row;
+  display: flex;  
   justify-content: right;
 }
 
@@ -17,11 +16,6 @@
   color: #215732;
 }
 
-.animal a:active {
-  border-bottom: 1px solid #215732;
-  color: #215732;
-}
-
 .animal-active {
   border-bottom: 1px solid #215732;
   color: #215732;
@@ -29,8 +23,6 @@
 
 @media screen and (max-width: 600px) {
   .wraper {
-    height: auto;
-    display: flex;
     flex-direction: column;
     border-bottom: 1px solid black;
     border-top: 1px solid black;

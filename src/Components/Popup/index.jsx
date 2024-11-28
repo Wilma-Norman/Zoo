@@ -8,11 +8,11 @@ const Popup = ({ isOpen, onClose, content }) => {
     <div className={styles.wraper}>
       <div className={styles.content}>
         <div className={styles.imageWraper}>
-        <img src={content.image} alt={content.header} className={styles.animalImage} />
-        <span className={styles.closeButton} onClick={onClose}>
-         &times; 
-        </span>
-        <h2 className={styles.imageHeader}>{content.header}</h2>
+          <img src={content.image} alt={content.header} className={styles.animalImage} />
+            <span className={styles.closeButton} onClick={onClose}>
+            &times; 
+            </span>
+          <h2 className={styles.imageHeader}>{content.header}</h2>
         </div>
         <div className={styles.textWraper}>
             <p>Life span: {content.lifeSpan}</p>

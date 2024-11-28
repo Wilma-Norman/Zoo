@@ -1,14 +1,14 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import { mammalsData } from './DataCategoy/animalCategory.jsx'
+import { birdData } from './DataCategoy/animalCategory.jsx'
+import { reptileData } from './DataCategoy/animalCategory.jsx'
 import './App.css'
 import Header from './Components/Header'
 import Home from './Components/Home'
 import Navigation from './Components/Navigation'
-import Birds from './Components/pages/Birds/index'
-import Reptiles from './Components/pages/Reptiles/index'
-import Mammals from './Components/pages/Mammals/index'
+import Animals from '../src/Components/pages/animals.jsx'
 import Footer from './Components/Footer'
-
 
 
 const App = () => {
@@ -21,20 +21,17 @@ const App = () => {
         alignItems: "flex-start",
     }
 
-
   return (
     <>
     <Header />
-      <div>
         <Navigation activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
         <div style={section}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/mammals" element={<Mammals />} />
-            <Route path="/birds" element={<Birds />} />
-            <Route path="/reptiles" element={<Reptiles />} />
+            <Route path="/mammals" element={<Animals animalData={mammalsData}/>}/>
+            <Route path="/birds" element={<Animals animalData={birdData} />} />
+            <Route path="/reptiles" element={<Animals animalData={reptileData}/>} />
           </Routes>          
-        </div>
       </div>
     <Footer />
     </>

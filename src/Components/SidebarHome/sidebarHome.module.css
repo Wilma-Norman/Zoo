@@ -17,8 +17,7 @@
 
 .text {
     color: #fff;
-    margin: 20px;
-    width: 150px;
+    margin: 20px;    
     display: flex;
     border-bottom: 1px solid white;
     text-decoration: none;
@@ -54,8 +53,7 @@
   }
 
 @media only screen and (max-width: 600px) {
-    .ulWraper {
-        display: flex;
+    .ulWraper {        
         flex-direction: column;
     }
 }
